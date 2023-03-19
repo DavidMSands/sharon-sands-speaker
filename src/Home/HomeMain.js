@@ -1,10 +1,43 @@
 import React from 'react'
 import { AiOutlineDown } from 'react-icons/ai'
 
-import mainAboutPhoto from '../Data/Home/sharon-sands-home-about.svg'
-import mainLandscape from '../Data/Home/sharon-main-home.jpg'
+import mainAboutPhoto from '../Data/Home/sharon-about-home.jpg'
+import mainAboutSectionPhoto from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
+import mountains from '../Data/Home/colorado-mountains-2.jpg'
+import speaking from '../Data/Home/sharon-speaking.jpg'
+import laughing from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
 
 function HomeMain() {
+  const newHomePhotos = [
+    {
+      id: 1,
+      image: laughing,
+      alt: "sharon sands colorado mountains",
+      text: "ABOUT",
+      subtext: "Learn more about Sharon Sands",
+      width: 1000,
+      height: 1469
+    },
+    {
+      id: 2,
+      image: mountains,
+      alt: "colorado mountains",
+      text: "FAQ",
+      subtext: "Frequently asked questions",
+      width: 1000,
+      height: 1503
+    },
+    {
+      id: 3,
+      image: speaking,
+      alt: "sharon sands speaking at conference",
+      text: "MEDIA",
+      subtext: "Past events & talks",
+      width: 1536,
+      height: 2048
+    }
+  ]
+
   return (
     <div className='home-page'>
       <section className='home-about-section split'>
@@ -34,14 +67,32 @@ function HomeMain() {
           </div>
         </div>
       </section>
-      <section className='home-about-section-2'>
-          <img src={mainLandscape} />
+      {/* <section className='home-about-section-2'>
+          <img src={mainAboutSectionPhoto} />
           <div>
             <p>Hello! My name is <b>Sharon Sands!</b></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.</p>
             <p>Vulputate enim nulla aliquet porttitor. Sed risus ultricies tristique nulla aliquet enim. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Ac orci phasellus egestas tellus. Posuere morbi leo urna molestie at elementum eu.</p>
             <button className='more-about-btn'>About</button>
           </div> 
+      </section> */}
+      <section className='photo-section'>
+        <div id='pics'>
+          {newHomePhotos.map(image => (
+          <div className='home-photo-container'>
+            <img
+            src={image.image}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            />
+            <div className='overlay'>
+              <p id='photo-text'>{image.text}</p>
+              <p id='photo-subtext'>{image.subtext}</p>
+            </div>
+          </div>
+        ))}
+        </div>
       </section>
     </div>
   )

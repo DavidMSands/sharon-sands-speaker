@@ -10,6 +10,7 @@ import AboutMain from './About/AboutMain';
 import { AnimatePresence } from 'framer-motion'
 import ScrollToTop from './ScrollToTop';
 import NavBar from './Header/NavBar';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/references" element={<ReferencesMain />} />
           <Route exact path="/contact" element={<ContactMain />} />
         </Routes>
+        <Footer />
       {/* </AnimatePresence> */}
     </div>
   );
