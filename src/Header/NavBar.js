@@ -1,9 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, NavLink } from "react-router-dom"
+import { VscMenu } from 'react-icons/vsc'
+import { CgClose } from 'react-icons/cg'
 
 import logo from '../Data/SHARON.svg'
 
 function NavBar() {
+  const [isChecked, setIsChecked] = useState(false)
+
+    const handleChecked = () => {
+        setIsChecked(!isChecked)
+    }
+
+    const handleCheckedFalse = () => {
+        setIsChecked(false)
+    }
   return (
     <header >
       <div className='navbar split'>
@@ -11,6 +22,11 @@ function NavBar() {
           <img src={logo} alt='speaker logo' />
         </section>
         <section className='navbar-menu-items'>
+        <input type="checkbox" id="check" checked={isChecked} onChange={handleChecked} />
+                <label for="check">
+                    <VscMenu id="button"/>
+                    <CgClose id='cancel' />
+                </label>
           <ul>
             <li><NavLink to='/' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Home<hr/></NavLink></li>
             <li><NavLink to='/about' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>About<hr/></NavLink></li>

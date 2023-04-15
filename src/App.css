@@ -31,9 +31,20 @@ header {
     margin-bottom: 160px;
 }
 
+@media (max-width: 1557px) {
+    header {
+        width: 100%;
+    }
+}
+
 .navbar {
     max-width: 1800px;
     margin: auto;
+}
+
+.split-home {
+    display: flex;
+    justify-content: space-between;
 }
 
 .split {
@@ -86,6 +97,79 @@ header {
     margin-top: -178px;
 }
 
+label #button,
+label #cancel {
+    font-size: 1.5rem;
+    margin: 0px 40px 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1450px) {
+    .navbar-logo img {
+        margin-top: -120px;
+        width: 400px;
+    }
+
+    .navbar-menu-items ul li a {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    label #button {
+        display: block;
+    }
+
+    nav ul li:nth-child(1) {
+        margin-left: 50px;
+    }
+
+    .navbar-menu-items ul {
+        position: fixed;
+        background-color: rgb(248, 248, 248);
+        width: 100%;
+        height: 100vh;
+        top: 140px;
+        left: -110%;
+        text-align: center;
+        transition: all 750ms;
+        z-index: 500;
+        flex-direction: column;
+    }
+
+    .is-active hr {
+        display: none;
+    }
+
+    .navbar-menu-items ul li {
+        display: block;
+        top: 1px;
+        margin-right: 30px;
+        padding-top: 50px;
+    }
+
+    li a {
+        font-size: 1.1rem;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ label #button {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+}
 /* home page styles */
 
 .home-page {
@@ -147,6 +231,7 @@ header {
     color: var(--main-font-clr-gray);
     position: relative;
 }
+
 
 .home-about-paragraph div {
     text-align: center;
@@ -237,6 +322,33 @@ header {
     color: var(--accent-clr);
 }
 
+@media (max-width: 1400px) {
+    .split-home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-about-section img {
+        margin: 0;
+    }
+
+    .home-about-paragraph {
+        margin: auto;
+    }
+
+    .home-reference-section blockquote {
+        font-size: 1.15em;
+    }
+    
+    .home-reference-section blockquote p:first-child:before {
+        font-size: 7em;
+    }
+    
+    .home-reference-section cite {
+        font-size: .9em; 
+    }
+}
+
 .photo-section {
     margin: 100px 0 0 0;
 }
@@ -247,7 +359,6 @@ header {
     margin: 100px 0px 50px 0;
     margin-top: 100px;
 }
-
 
 #pics div img {
     width: 500px;
@@ -315,6 +426,156 @@ header {
     margin: 50px 0 -150px 0;
 }
 
+@media (max-width: 1499px ) {
+
+    #pics div img {
+        width: 350px;
+        height: 525px;
+        padding: 0 10px 0 10px;
+    }
+
+    #home-verse img {
+        width: 1000px;
+        margin: 50px 0 -150px 0;
+    }
+
+    .overlay {
+        width: 95%;
+        height: 99.1%;
+        top: 49.9%;
+    }
+    
+    #photo-text {
+        font-size: 35px;
+    }
+    
+    #photo-subtext {
+        font-size: 20px;
+    }
+    
+    .overlay:hover #photo-subtext {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1200px) {
+    #pics {
+        flex-direction: column;
+    }
+
+    #pics div img {
+        width: 500px;
+        height: 750px;
+        padding: 10px 0 10px 0;
+    }
+
+    .overlay {
+        width: 500px;
+        height: 750px;
+    }
+
+    #photo-text {
+        font-size: 50px;
+    }
+    
+    #photo-subtext {
+        font-size: 22px;
+    }
+
+    .quote {
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .home-reference-section blockquote {
+        font-size: 1.1em;
+    }
+    
+    .home-reference-section blockquote p:first-child:before {
+        font-size: 6.5em;
+    }
+    
+    .home-reference-section cite {
+        font-size: .8em; 
+    }
+
+    .home-about-section img {
+        width: 55%;
+    }
+    
+    .home-about-paragraph p:nth-child(1) {
+        max-width: 550px;
+        font-family: var(--cormorant-font);
+        font-weight: 100;
+        font-style: normal;
+        color: var(--main-font-clr-gray);
+        position: relative;
+        text-align: center;
+        margin-bottom: -35px;
+        font-weight: 400;
+    }
+    
+    .home-about-paragraph p:nth-child(1):before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #d6d5d5;
+        left: 0;
+        top: 50%;
+        position: absolute;
+    }
+    
+    .home-about-paragraph p:nth-child(2) {
+        color: var(--accent-clr);
+        font-size: 40px;
+        font-style: italic;
+    }
+    
+    .home-about-paragraph {
+        width: 70%;
+    }
+    
+    
+    .home-about-paragraph div {
+        text-align: center;
+    }
+    
+    .home-about-paragraph div button {
+        width: 35%;
+        font-size: 100%;
+    }
+    
+    .home-about-paragraph div button:hover {
+        background-color: var(--accent-clr);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    #home-verse img {
+        width: 750px;
+    }
+
+    .quote {
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    .home-reference-section blockquote {
+        font-size: 1em;
+    }
+    
+    .home-reference-section blockquote p:first-child:before {
+        font-size: 6em;
+    }
+    
+    .home-reference-section cite {
+        font-size: .7em; 
+    }
+}
 /* references page  */
 .back-img {
     background-image: url('./Data/References/mountains-landscape.jpg');
@@ -341,7 +602,7 @@ header {
     font-family: Georgia, serif;
     font-size: 1.3em;
     font-style: italic;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0;
     position: relative;
     text-shadow: 0 1px white;
@@ -435,6 +696,13 @@ hr {
 .about-section {
     max-width: 1500px;
     margin: auto;
+    text-align: center;
+}
+
+.about-section img {
+    width: 1200px;
+    margin-top: -75px;
+    margin-bottom: 175px;
 }
 
 .about-container {
@@ -444,7 +712,11 @@ hr {
 .about-container p {
     font-family: var(--cormorant-font);
     font-size: 23px;
-    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.about-container p:nth-child(1) {
+    margin-top: -90px;
 }
 
 /* faq page  */
@@ -588,6 +860,22 @@ hr {
 .statement-of-faith b {
     font-weight: 500;
     color: black;
+}
+
+/* contact styling */
+
+.contact-container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.contact-img-container {
+    text-align: center;
+}
+
+.contact-container img {
+    width: 1200px;
+    margin-bottom: -125px;
 }
 
 label {

@@ -1,8 +1,9 @@
 import React from 'react'
+import corinthians from '../Data/Contact/cor-contact-verse.svg'
 
 function ContactMain() {
   return (
-    <div>
+    <div className='contact-container'>
       <form action="https://formsubmit.co/b973eeca66ee004dff6b22ce68f2dd5c" method="POST" >
         <label for="fname">First Name *</label><br/>
         <input type="text" id="fname" name="firstname" className='form-input' required /><br/>
@@ -24,6 +25,9 @@ function ContactMain() {
         <textarea type="text" id="details" name="details" className='form-input' /><br/>
         <button type="submit">SUBMIT</button>
       </form>
+      <div className='contact-img-container'>
+        <img src={corinthians} alt='1 corinthians 2:2 graphic' />
+      </div>
     </div>
   )
 }

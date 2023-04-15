@@ -8,6 +8,7 @@ import speaking from '../Data/Home/sharon-speaking.jpg'
 import laughing from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
 import danielVerse from '../Data/Home/daniel-verse-home.svg'
 
+
 function HomeMain() {
   const newHomePhotos = [
     {
@@ -41,14 +42,14 @@ function HomeMain() {
 
   return (
     <div className='home-page'>
-      <section className='home-about-section split'>
+      <section className='home-about-section split-home'>
         <div>
           <img src={mainAboutPhoto} />
         </div>
         <div className='home-about-paragraph'>
           <p>Sharon Sands</p>
           <p>Speaker</p>
-          <p>Sharon is a passionate bible teacher, communicator, and mentor.</p>
+          <p>Sharon is a passionate Bible teacher, communicator, and mentor.</p>
           <p>With over 35 years of leadership experience she has a deep love for Jesus and finds great joy in the humbling honor of investing in hearts across the U.S. and beyond.</p>
           <div>
           <button>Contact Sharon</button>
@@ -71,15 +72,6 @@ function HomeMain() {
           </div>
         </div>
       </section>
-      {/* <section className='home-about-section-2'>
-          <img src={mainAboutSectionPhoto} />
-          <div>
-            <p>Hello! My name is <b>Sharon Sands!</b></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.</p>
-            <p>Vulputate enim nulla aliquet porttitor. Sed risus ultricies tristique nulla aliquet enim. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Ac orci phasellus egestas tellus. Posuere morbi leo urna molestie at elementum eu.</p>
-            <button className='more-about-btn'>About</button>
-          </div> 
-      </section> */}
       <section className='photo-section'>
         <div id='pics'>
           {newHomePhotos.map(image => (

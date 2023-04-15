@@ -1,9 +1,11 @@
 import React from 'react'
 import sharonSands from '../Data/About/sharon-sands-headshot.png'
+import psalm from '../Data/About/psalm-verse-about.svg'
 
 function AboutMain() {
   return (
     <div className='about-section'>
+      <img src={psalm} alt='psalm 73:28 verse graphic' />
       <div className='about-container'>
         <img src={sharonSands} alt='sharon sands headshot' />
         <div>
