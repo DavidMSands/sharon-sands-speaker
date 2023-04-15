@@ -6,6 +6,7 @@ import mainAboutSectionPhoto from '../Data/Home/sharon-sands-mountain-backround-
 import mountains from '../Data/Home/colorado-mountains-2.jpg'
 import speaking from '../Data/Home/sharon-speaking.jpg'
 import laughing from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
+import danielVerse from '../Data/Home/daniel-verse-home.svg'
 
 function HomeMain() {
   const newHomePhotos = [
@@ -46,9 +47,12 @@ function HomeMain() {
         </div>
         <div className='home-about-paragraph'>
           <p>Sharon Sands</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.</p>
-          <p>Vulputate enim nulla aliquet porttitor. Sed risus ultricies tristique nulla aliquet enim. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Ac orci phasellus egestas tellus. Posuere morbi leo urna molestie at elementum eu. Lobortis elementum nibh tellus molestie nunc non blandit massa.</p>
-          <p>Aliquam efficitur mi ut ante scelerisque, vitae dapibus purus imperdiet.</p>
+          <p>Speaker</p>
+          <p>Sharon is a passionate bible teacher, communicator, and mentor.</p>
+          <p>With over 35 years of leadership experience she has a deep love for Jesus and finds great joy in the humbling honor of investing in hearts across the U.S. and beyond.</p>
+          <div>
+          <button>Contact Sharon</button>
+          </div>
         </div>
       </section>
       <section className='home-reference-section'>
@@ -94,6 +98,9 @@ function HomeMain() {
         ))}
         </div>
       </section>
+      <div id='home-verse'>
+        <img src={danielVerse} alt='verse daniel 11:32b' />
+      </div>
     </div>
   )
 }

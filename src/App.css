@@ -1,5 +1,7 @@
+@import "https://unpkg.com/open-props";
+
 :root {
-    --accent-clr: #86adb3;
+    --accent-clr: #80c0ca;
     --sandy-accent-color: #f2e8e1;
     --main-font-clr-gray: #707070;
 
@@ -8,6 +10,8 @@
     --fun-font: 'IM Fell DW Pica', serif;
     --subtext-font: 'Kristi', cursive;
     --secondary-fun-font: 'IM Fell English SC', serif;
+    --line_color: #555555 ;
+    --back_color: white  ;
 }
 
 body {
@@ -103,12 +107,33 @@ header {
 }
 
 .home-about-paragraph p:nth-child(1) {
-    font-family: var(--co);
+    max-width: 550px;
+    font-family: var(--cormorant-font);
     font-size: 60px;
     font-weight: 100;
     font-style: normal;
-    margin-bottom: -10px;
-    color: black;
+    color: var(--main-font-clr-gray);
+    position: relative;
+    text-align: center;
+    margin-bottom: -35px;
+    font-weight: 400;
+}
+
+.home-about-paragraph p:nth-child(1):before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #d6d5d5;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.home-about-paragraph p:nth-child(2) {
+    color: var(--accent-clr);
+    font-size: 40px;
+    font-style: italic;
 }
 
 .home-about-paragraph {
@@ -116,10 +141,31 @@ header {
     font-family: var(--cormorant-font);
     font-weight: 100;
     font-size: 26px;
-    margin-top: 30px;
+    margin-top: 65px;
     margin-right: 50px;
     text-align: justify;
     color: var(--main-font-clr-gray);
+    position: relative;
+}
+
+.home-about-paragraph div {
+    text-align: center;
+}
+
+.home-about-paragraph div button {
+    margin-top: 20px;
+    border: 2px solid var(--accent-clr);
+    font-size: 30px;
+    font-family: var(--cormorant-font);
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    color: var(--main-font-clr-gray);
+}
+
+.home-about-paragraph div button:hover {
+    background-color: var(--accent-clr);
+    color: white;
+    cursor: pointer;
 }
 
 .home-reference-section {
@@ -258,6 +304,17 @@ header {
     visibility: visible;
 }
 
+#home-verse {
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+}
+
+#home-verse img {
+    width: 1200px;
+    margin: 50px 0 -150px 0;
+}
+
 /* references page  */
 .back-img {
     background-image: url('./Data/References/mountains-landscape.jpg');
@@ -352,10 +409,6 @@ header {
 
 /* footer styles */
 
-footer {
-    
-}
-
 .footer-container {
     max-width: 1500px;
     margin: auto;
@@ -394,3 +447,195 @@ hr {
     margin-top: 30px;
 }
 
+/* faq page  */
+
+.genesis-picture-container {
+    text-align: center;
+}
+
+.genesis-picture-container img {
+    margin-top: -50px;
+    width: 1200px;
+}
+
+.faq-container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+#faq-title-container p {
+    font-size: 39px;
+    font-family: var(--cormorant-font);
+    font-weight: 400;
+    width: 1450px;
+}
+
+#faq-title-container {
+    width: 1500px;
+    margin: auto;
+    margin: 0 25px 0 25px;
+}
+
+.accordian {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    width: 1450px;
+    margin: auto;
+    margin: 0 25px 0 25px;
+}
+
+.faq-item {
+    border-bottom: 1px dashed #CEE1F8;
+    padding: 2px 20px;
+}
+
+.faq-item:nth-child(3) {
+    border: none;
+}
+
+.faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    z-index: 500;
+    font-family: var(--cormorant-font);
+    font-size: 20px;
+    color: var(--accent-clr);
+    cursor: pointer;
+}
+
+.faq-title-selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    z-index: 500;
+    font-family: var(--cormorant-font);
+    font-size: 20px;
+    color: var(--accent-clr);
+    cursor: pointer;
+}
+
+.plus-minus {
+    color: var(--accent-clr);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+
+.faq-content-hide {
+    position: relative;
+    z-index: 0;
+    max-height: 0;
+    padding: 5px 5px 5px 15px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+    font-family: var(--cormorant-font);
+    font-size: 25px;
+    color: var(--main-font-clr-gray);
+}
+
+.faq-content-show {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    height: auto;
+    max-height: 9999px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 15px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    font-family: var(--cormorant-font);
+    font-size: 25px;
+    color: var(--main-font-clr-gray);
+}
+
+.statement-of-faith {
+    margin: 0 25px 0 25px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    padding: 60px;
+}
+
+.statement-title {
+    margin: 0 25px 30px 25px;
+    font-size: 42px;
+    font-family: var(--cormorant-font);
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.statement-of-faith h2:nth-child(1) {
+    margin-top: 0;
+}
+
+.statement-of-faith h2 {
+    font-size: 30px;
+    font-family: var(--cormorant-font);
+    font-weight: 700;
+    margin-top: 100px;
+    color: var(--accent-clr);
+}
+
+.statement-of-faith p {
+    font-size: 23px;
+    font-family: var(--cormorant-font);
+    font-weight: 400;
+    color: var(--main-font-clr-gray);
+    padding-left: 20px;
+}
+
+.statement-of-faith b {
+    font-weight: 500;
+    color: black;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: var(--cormorant-font);
+    font-size: 20px;
+}
+
+form { max-width:500px; margin:50px auto; }
+
+.form-input {
+    color:var(--main-font-clr-gray);
+    font-family: var(--cormorant-font);
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 3px solid #99dbe5;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+
+  .form-input:focus { border:3px solid var(--accent-clr); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: var(--cormorant-font);
+  width: 100%;
+  background:#99dbe5;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:28px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:var(--accent-clr); }
