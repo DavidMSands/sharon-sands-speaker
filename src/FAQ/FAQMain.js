@@ -17,12 +17,8 @@ function FAQMain() {
 
   return (
     <div className='faq-container'>
-      <div className='genesis-picture-container'>
-        <img src={genesisScripture} alt="genesis 16:13 picture" />
-      </div>
       <div id='faq-title-container'>
         <p>FAQs:</p>
-        
       </div>
       <div className='accordian'>
         {FAQs.map((item, i) => (
@@ -58,6 +54,9 @@ function FAQMain() {
               ))}
             </div>
           ))} 
+      </div>
+      <div className='genesis-picture-container'>
+        <img src={genesisScripture} alt="genesis 16:13 picture" />
       </div>
     </div>
   )

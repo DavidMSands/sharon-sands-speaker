@@ -6,7 +6,7 @@ function Footer() {
     <footer>
         <div className='footer-container'>
             <img src={logo} alt="sharon sands logo" />
-            <hr></hr>
+            <div className='divider'></div>
             <p>Sharon Sands © 2023 All Rights Reserved. | Website designed and built by: <a href='https://github.com/DavidMSands'>David Sands</a></p>
         </div>
     </footer>
