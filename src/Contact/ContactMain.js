@@ -4,7 +4,7 @@ import corinthians from '../Data/Contact/cor-contact-verse.svg'
 function ContactMain() {
   return (
     <div className='contact-container'>
-      <h3>Contact Sharon</h3>
+      <h3>Contact <b>Sharon</b></h3>
       <form action="https://formsubmit.co/b973eeca66ee004dff6b22ce68f2dd5c" method="POST" >
         <label for="fname">First Name *</label><br/>
         <input type="text" id="fname" name="firstname" className='form-input' required /><br/>
