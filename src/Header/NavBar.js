@@ -28,12 +28,12 @@ function NavBar() {
                     <CgClose id='cancel' />
                 </label>
           <ul>
-            <li><NavLink to='/' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Home<hr/></NavLink></li>
-            <li><NavLink to='/about' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>About<hr/></NavLink></li>
-            <li><NavLink to='/media' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Media<hr/></NavLink></li>
-            <li><NavLink to='/faq' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>FAQ<hr/></NavLink></li>
-            <li><NavLink to='/references' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>References<hr/></NavLink></li>
-            <li><NavLink to='/contact' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Contact<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Home<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/about' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>About<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/media' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Media<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/faq' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>FAQ<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/references' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>References<hr/></NavLink></li>
+            <li onClick={handleCheckedFalse}><NavLink to='/contact' className={({ isActive }) => (isActive ? 'is-active' : 'inactive')}>Contact<hr/></NavLink></li>
           </ul>
         </section>
       </div>

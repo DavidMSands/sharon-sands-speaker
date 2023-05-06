@@ -63,7 +63,6 @@ function MediaMain() {
           <MdContentCopy className='copy-btn' onClick={copyToClipboard}/>
           <div className={`popup ${copySuccess ? "active" : ""}`}><BsCheckCircle className='check-box'/> Copied Sharon's bio to clipboard</div>
         </div>
-        
       </div>
       <h3>Speaking <b>Clips:</b></h3>
       <div className='media-split'>
@@ -73,7 +72,6 @@ function MediaMain() {
             id="Uxhf0ucjsa4"
             title="The Heart of our Rock"
             className="youtube-video"
-    
           />
         </div>
         <div>
@@ -82,7 +80,6 @@ function MediaMain() {
             id="G5od1jP0zvI"
             title="Heart of Worship Conference"
             playerClass="lty-playbtn"
-            
           />
         </div>
       </div>
@@ -103,6 +100,10 @@ function MediaMain() {
               playerClass="lty-playbtn"
             />
           </div>
+      </div>
+      <div className='gen-his'>
+        <p>Want to hear more from Sharon?</p>
+        <p>Check out the <a href='https://genhisbettertogether.wordpress.com/list-of-posts/' target="_blank">"GEN HIS - BETTER TOGETHER"</a> blog!</p>
       </div>
     </div>
   )

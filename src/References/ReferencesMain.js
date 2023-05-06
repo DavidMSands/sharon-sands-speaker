@@ -6,9 +6,9 @@ function ReferencesMain() {
   return (
     <div>
       <div className='references-page'>
-      <section rel="preload">
-        <div  className="back-img"></div>
-      </section>
+      <div>
+        <h3>Sharon's <b>References:</b></h3>
+      </div>
           {allReferences.map(reference => (
             <section className='all-references'>
               <div className='quote'>
