@@ -919,7 +919,7 @@ label #cancel {
 }
 
 .all-references {
-    padding: 50px 15px 50px 25px;
+    padding: 50px 25px 50px 25px;
     margin: 130px 0 130px 0;
 }
 
@@ -1424,7 +1424,7 @@ h3 b {
     }
 
     .media-split div {
-        padding: 0 20px 80px 20px;
+        padding: 0 20px 50px 20px;
         width: 200px;
     }
 
@@ -1457,6 +1457,12 @@ h3 b {
         height: 100px;
         padding: 5px;
     }
+
+    .popup {
+        margin-left: -100.5px; 
+        width: 175px;
+        font-size: 10px;
+      }
 
     .download-headshots-container {
         margin-top: -75px;
@@ -1491,7 +1497,7 @@ h3 b {
     }
 
     .media-split div {
-        padding: 0 10px 80px 10px;
+        padding: 0 10px 40px 10px;
         width: 41.25%;
     }
 
@@ -2341,6 +2347,10 @@ textarea {
 @media (max-width: 724px) {
     label {
         font-size: 14px;
+    }
+
+    .contact-container img {
+        margin-top: 20px;
     }
 }
 
