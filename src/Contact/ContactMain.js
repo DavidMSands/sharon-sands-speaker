@@ -1,9 +1,17 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { Helmet } from "react-helmet";
+
 import corinthians from '../Data/Contact/cor-contact-verse.svg'
 
 function ContactMain() {
   return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
     <div className='contact-container'>
+    <Helmet>
+        <meta property='og:title' content='Contact - Sharon Sands Speaker' />
+        <meta property="og:url" content="https://sharonsandsspeaker.com/contact" />
+    </Helmet>
       <h3>Contact <b>Sharon</b></h3>
       <form action="https://formsubmit.co/b973eeca66ee004dff6b22ce68f2dd5c" method="POST" >
         <label for="fname">First Name *</label><br/>
@@ -30,6 +38,7 @@ function ContactMain() {
         <img src={corinthians} alt='1 corinthians 2:2 graphic' />
       </div>
     </div>
+    </motion.div>
   )
 }
 

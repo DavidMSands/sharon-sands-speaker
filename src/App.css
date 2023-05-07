@@ -350,6 +350,10 @@ label #cancel {
 .more-references {
     text-align: center;
     margin-top: 40px;
+}
+
+.more-references a {
+    text-decoration: none;
     color: var(--main-font-clr-gray);
 }
 
@@ -1040,12 +1044,16 @@ h3 b {
     padding: 20px;
 }
 
-.headshot-split div:nth-child(1) img {
+.headshot-1 {
     object-position: 0% 30%;
 }
 
-.headshot-split div:nth-child(2) img {
+.headshot-2 {
     object-position: 0% 26%;
+}
+
+.headshot-3 {
+    object-position: 45% 0%;
 }
 
 .download-container {
@@ -1239,10 +1247,12 @@ h3 b {
 }
 
 .gen-his {
+    position: relative;
     max-width: 1000px;
     margin: auto;
     margin-top: 150px;
     margin-bottom: -75px;
+    z-index: 200;
 }
 
 .gen-his p {

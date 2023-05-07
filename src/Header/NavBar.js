@@ -19,7 +19,7 @@ function NavBar() {
     <header >
       <div className='navbar split'>
         <section className='navbar-logo'>
-          <img src={logo} alt='speaker logo' />
+          <Link to='/'><img src={logo} alt='speaker logo' /></Link>
         </section>
         <section className='navbar-menu-items'>
         <input type="checkbox" id="check" checked={isChecked} onChange={handleChecked} />

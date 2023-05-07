@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiOutlineDown } from 'react-icons/ai'
 import { motion } from 'framer-motion'
+import { Link } from "react-router-dom"
+import { Helmet } from "react-helmet";
 
 import mainAboutPhoto from '../Data/Home/sharon-about-home.jpg'
 import mainAboutSectionPhoto from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
@@ -17,6 +19,7 @@ function HomeMain() {
       image: laughing,
       alt: "sharon sands colorado mountains",
       text: "ABOUT",
+      path: "/about",
       subtext: "Learn more about Sharon Sands",
       width: 1000,
       height: 1469
@@ -26,6 +29,7 @@ function HomeMain() {
       image: mountains,
       alt: "colorado mountains",
       text: "FAQ",
+      path: "/faq",
       subtext: "Frequently asked questions",
       width: 1000,
       height: 1503
@@ -35,6 +39,7 @@ function HomeMain() {
       image: speaking,
       alt: "sharon sands speaking at conference",
       text: "MEDIA",
+      path: "/media",
       subtext: "Past events & talks",
       width: 1536,
       height: 2048
@@ -47,9 +52,15 @@ function HomeMain() {
     animate={{ opacity: 1 }}
     transition={{ duration: 1.5 }}>
     <div className='home-page'>
+    <Helmet>
+        <meta property='og:title' content='Sharon Sands Speaker' />
+        <meta property="og:url" content="https://sharonsandsspeaker.com/" />
+    </Helmet>
       <section className='home-about-section split-home'>
         <div>
+        <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
           <img src={mainAboutPhoto} />
+        </motion.div >
         </div>
         <div className='home-about-paragraph'>
           <p>Sharon Sands</p>
@@ -57,7 +68,7 @@ function HomeMain() {
           <p>Sharon is a passionate Bible teacher, communicator, and mentor.</p>
           <p>With over 35 years of leadership experience she has a deep love for Jesus and finds great joy in the humbling honor of investing in hearts across the U.S. and beyond.</p>
           <div>
-          <button>Contact Sharon</button>
+          <Link to='/contact'><button>Contact Sharon</button></Link>
           </div>
         </div>
       </section>
@@ -75,7 +86,7 @@ function HomeMain() {
           </cite>
           <div className='more-references'>
             <AiOutlineDown />
-            <p>Read more references</p>
+            <Link to='/references'><p>Read more references</p></Link>
           </div>
         </div>
         </motion.div >
@@ -84,8 +95,8 @@ function HomeMain() {
       <section className='photo-section'>
         <div id='pics'>
           {newHomePhotos.map(image => (
-          <div className='home-photo-container'>
-            <img
+          <Link to={image.path}><div className='home-photo-container'>
+             <img
             src={image.image}
             alt={image.alt}
             width={image.width}
@@ -95,7 +106,7 @@ function HomeMain() {
               <p id='photo-text'>{image.text}</p>
               <p id='photo-subtext'>{image.subtext}</p>
             </div>
-          </div>
+          </div></Link>
         ))}
         </div>
       </section>

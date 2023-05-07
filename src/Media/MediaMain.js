@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { Helmet } from "react-helmet";
 
 import downloadHeadshot1 from '../Data/Media/Sharon - headshots-15_websize.jpg'
 import downloadHeadshot2 from '../Data/Media/Sharon - headshots-9_websize.jpg'
@@ -37,24 +38,28 @@ function MediaMain() {
 
   return (
     <div id='media-container'>
+      <Helmet>
+        <meta property='og:title' content='Media - Sharon Sands Speaker' />
+        <meta property="og:url" content="https://sharonsandsspeaker.com/media" />
+      </Helmet>
       <div className='download-headshots-container'>
         <h3 className='headshot-title'>Sharons' <b>Headshots:</b></h3>
         <div className='headshot-split'>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot1} alt='sharon outdoor headshot' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshots1_websize.jpg')}/>
+              <img src={headshot1} alt='sharon outdoor headshot' className='headshot-1' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshots1_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>
           <div className='download-container'>
-            <motion.div initial={{ opacity: 0, y: 500 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot2} alt='sharon outdoor headshot red coat' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshots2_websize.jpg')}/>
+            <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+              <img src={headshot2} alt='sharon outdoor headshot red coat' className='headshot-2' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshots2_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: 500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot3} alt='sharon headshot' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshots3_websize.jpg')}/>
+              <img src={headshot3} alt='sharon headshot' className='headshot-3' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshots3_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Helmet } from "react-helmet";
 
 import family from '../Data/About/family.png'
 import toddAndSharon from '../Data/About/todd_and_sharon.png'
@@ -11,12 +12,18 @@ function AboutMain() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
     <div>
+      <Helmet>
+        <meta property='og:title' content='About - Sharon Sands Speaker' />
+        <meta property="og:url" content="https://sharonsandsspeaker.com/about" />
+      </Helmet>
       <div className='header-center'>
         <p className='about-section-sharon'>About <b>Sharon</b></p>
       </div>
       <div className='about-section'>
         <div className='about-container'>
-          <img src={sharonSands} className='sharon-head-shot' alt='sharon sands headshot' />
+          <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+            <img src={sharonSands} className='sharon-head-shot' alt='sharon sands headshot' />
+          </motion.div>
           <div>
             <p>I grew up in Seattle, WA surrounded by family and extended family that deeply loved Jesus. Right before my Senior year in high school, my family moved to Austin, TX. </p>
             <p>I had a passion for missions and student ministry and began serving the Lord at the age of 17, leading a girls’ discipleship group. Through the years, the Lord continued to open doors for me to minister to students in Texas, Arkansas, and Heidelberg, W. Germany. </p>
@@ -44,7 +51,7 @@ function AboutMain() {
               </motion.div>
             </div>
             <div className='stack-photo-text'>
-              <motion.div initial={{ opacity: 0, x: -3 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}>
+              <motion.div initial={{ opacity: 0, x: -300 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}>
                 <p>My family. . .</p>
               </motion.div>
             </div>
