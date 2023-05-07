@@ -7,7 +7,7 @@ import MediaMain from './Media/MediaMain';
 import ReferencesMain from './References/ReferencesMain';
 import ContactMain from './Contact/ContactMain';
 import AboutMain from './About/AboutMain';
-import { AnimatePresence } from 'framer-motion'
+import PageNotFound from './404/PageNotFound';
 import ScrollToTop from './ScrollToTop';
 import NavBar from './Header/NavBar';
 import Footer from './Footer/Footer';
@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/faq" element={<FAQMain />} />
           <Route exact path="/references" element={<ReferencesMain />} />
           <Route exact path="/contact" element={<ContactMain />} />
+          <Route exact path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       {/* </AnimatePresence> */}

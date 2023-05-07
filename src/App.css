@@ -2343,3 +2343,27 @@ textarea {
         font-size: 14px;
     }
 }
+
+.page-not-found {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--cormorant-font);
+    color: var(--main-font-clr-gray)
+}
+
+.page-not-found a {
+    text-decoration: none;
+    color: var(--accent-clr);
+}
+
+@media (max-width: 700px) {
+    .page-not-found {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-not-found {
+        font-size: 15px;
+    }
+}
