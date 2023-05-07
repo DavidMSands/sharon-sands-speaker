@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 import family from '../Data/About/family.png'
 import toddAndSharon from '../Data/About/todd_and_sharon.png'
@@ -8,6 +9,7 @@ import psalm from '../Data/About/psalm-verse-about.svg'
 
 function AboutMain() {
   return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
     <div>
       <div className='header-center'>
         <p className='about-section-sharon'>About <b>Sharon</b></p>
@@ -24,24 +26,37 @@ function AboutMain() {
         </div>
         <div className='divider'></div>
         <div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
           <div className='about-family-photos'>
             <div className='stack-photo-back'>
-              <img src={tattoo} alt='sharon and her husband outside' className='tattoo' />
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+                <img src={tattoo} alt='sharon and her husband outside' className='tattoo' />
+              </motion.div>
             </div>
             <div className='stack-photo-mid'>
-              <img src={toddAndSharon} alt='sharon and her husband outside' className='todd-and-sharon'/>
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+                <img src={toddAndSharon} alt='sharon and her husband outside' className='todd-and-sharon'/>
+              </motion.div>
             </div>
             <div className='stack-photo-top'>
-              <img src={family} alt='sharons family' className='family'/>
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+                <img src={family} alt='sharons family' className='family'/>
+              </motion.div>
             </div>
             <div className='stack-photo-text'>
-              <p>My family. . .</p>
+              <motion.div initial={{ opacity: 0, x: -3 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}>
+                <p>My family. . .</p>
+              </motion.div>
             </div>
           </div>
+          </motion.div>
         </div>
-        <img src={psalm} className='psalm' alt='psalm 73:28 verse graphic' />
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.75 }} viewport={{ once: true }}>
+          <img src={psalm} className='psalm' alt='psalm 73:28 verse graphic' />
+        </motion.div>
       </div>
     </div>
+    </motion.div>
   )
 }
 

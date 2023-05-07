@@ -1,13 +1,14 @@
 import React from 'react'
 import { allReferences } from './AllReferencesData'
-import mountains from '../Data/References/mountains-landscape.jpg'
+import { motion } from 'framer-motion'
 
 function ReferencesMain() {
   return (
+    <motion.div initial={{opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <div>
       <div className='references-page'>
       <div>
-        <h3>Sharon's <b>References:</b></h3>
+        <h2>Sharon's <b>References:</b></h2>
       </div>
           {allReferences.map(reference => (
             <section className='all-references'>
@@ -25,6 +26,7 @@ function ReferencesMain() {
           ))}
       </div>
     </div>
+    </motion.div>
   )
 }
 

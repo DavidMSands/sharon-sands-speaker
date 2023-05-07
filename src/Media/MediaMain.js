@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+
 import downloadHeadshot1 from '../Data/Media/Sharon - headshots-15_websize.jpg'
 import downloadHeadshot2 from '../Data/Media/Sharon - headshots-9_websize.jpg'
 import downloadHeadshot3 from '../Data/Media/sharon-sands-2023.jpg'
@@ -39,20 +41,27 @@ function MediaMain() {
         <h3 className='headshot-title'>Sharons' <b>Headshots:</b></h3>
         <div className='headshot-split'>
           <div className='download-container'>
-            <img src={headshot1} alt='sharon outdoor headshot' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshots1_websize.jpg')}/>
-            <BsDownload  className='download-btn'/>
+            <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
+              <img src={headshot1} alt='sharon outdoor headshot' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshots1_websize.jpg')}/>
+              <BsDownload  className='download-btn'/>
+            </motion.div>
           </div>
           <div className='download-container'>
-            <img src={headshot2} alt='sharon outdoor headshot red coat' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshots2_websize.jpg')}/>
-            <BsDownload  className='download-btn'/>
+            <motion.div initial={{ opacity: 0, y: 500 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+              <img src={headshot2} alt='sharon outdoor headshot red coat' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshots2_websize.jpg')}/>
+              <BsDownload  className='download-btn'/>
+            </motion.div>
           </div>
           <div className='download-container'>
-            <img src={headshot3} alt='sharon headshot' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshots3_websize.jpg')}/>
-            <BsDownload  className='download-btn'/>
+            <motion.div initial={{ opacity: 0, x: 500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
+              <img src={headshot3} alt='sharon headshot' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshots3_websize.jpg')}/>
+              <BsDownload  className='download-btn'/>
+            </motion.div>
           </div>
         </div>
       </div>
       <div className='sharon-bio'>
+      <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
       <h3>Sharon's <b>Bio:</b></h3>
         <div className='bio-box'>
           <div>
@@ -61,9 +70,11 @@ function MediaMain() {
             <p>Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries.   She has a passion to equip, nurture and encourage all women in their pursuit of Christ!</p>
           </div>
           <MdContentCopy className='copy-btn' onClick={copyToClipboard}/>
-          <div className={`popup ${copySuccess ? "active" : ""}`}><BsCheckCircle className='check-box'/> Copied Sharon's bio to clipboard</div>
         </div>
+        </motion.div>
+        <div className={`popup ${copySuccess ? "active" : ""}`}><BsCheckCircle className='check-box'/> Copied Sharon's bio to clipboard</div>
       </div>
+      <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
       <h3>Speaking <b>Clips:</b></h3>
       <div className='media-split'>
         <div>
@@ -101,10 +112,13 @@ function MediaMain() {
             />
           </div>
       </div>
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
       <div className='gen-his'>
         <p>Want to hear more from Sharon?</p>
         <p>Check out the <a href='https://genhisbettertogether.wordpress.com/list-of-posts/' target="_blank">"GEN HIS - BETTER TOGETHER"</a> blog!</p>
       </div>
+      </motion.div>
     </div>
   )
 }

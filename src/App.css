@@ -899,6 +899,21 @@ label #cancel {
 }
 
 /* references page  */
+.references-page h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--cormorant-font);
+    color: var(--main-font-clr-gray);
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.references-page h2 b {
+    color: var(--accent-clr);
+    font-weight: 400;
+}
+
 .all-references {
     padding: 50px 15px 50px 25px;
     margin: 130px 0 130px 0;
@@ -947,6 +962,47 @@ label #cancel {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 1px white; 
+}
+
+@media (max-width: 600px) {
+    .references-page h2 {
+        font-size: 40px;
+        margin-top: -80px;
+        margin-bottom: -100px;
+    }
+
+    .all-references blockquote {
+        font-size: 1em;
+    }
+    
+    .all-references blockquote p:first-child:before {
+        content: '\201C';
+        color: var(--accent-clr);
+        font-size: 6.5em;
+        font-weight: 700;
+        opacity: .4;
+        position: absolute;
+        top: -.4em;
+        left: -.3em;    
+        text-shadow: none;
+        z-index: 400;
+    }
+    
+    .all-references cite {
+        color: gray;
+        display: block;
+        font-size: .9em; 
+    }
+      
+    .all-references cite span {
+        color: #5e5e5e;
+        font-size: 1.1em;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 0 1px white; 
+    }
 }
 /* media page */
 
@@ -1070,6 +1126,7 @@ h3 b {
     width: 375px;
     background-color: #fff;
     color: var(--main-font-clr-gray);
+    font-family: var(--cormorant-font);
     border-left: 10px solid var(--accent-clr);
     text-align: center;
     padding: 6px;
@@ -1401,7 +1458,7 @@ h3 b {
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .download-btn {
@@ -1424,7 +1481,7 @@ h3 b {
     }
 
     .media-split div {
-        padding: 0 20px 80px 20px;
+        padding: 0 10px 80px 10px;
         width: 41.25%;
     }
 
@@ -1644,7 +1701,293 @@ h3 b {
     margin-top: -90px;
 }
 
+@media (max-width: 1375px) {
+    .header-center {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-section-sharon {
+        max-width: 550px;
+        font-size: 46px;
+        margin-bottom: 123px;
+        margin-top: -50px;
+    }
+    
+    .about-section-sharon b {
+        color: var(--accent-clr);
+        font-weight: 400;
+    }
 
+    .about-section {
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .about-container div  {
+        text-align: justify;
+    }
+    
+    .sharon-head-shot {
+        width: 519.2px;
+        margin-top: -30px;
+        margin-bottom: 215px;
+    }
+    
+    .about-family-photos {
+        margin-top: 25px;
+    }
+    
+    .stack-photo-back img {
+        width: 461.5px;
+    }
+    
+    .stack-photo-mid img {
+        width: 461.5px;
+    }
+    
+    .stack-photo-top img {
+        width: 461.5px;
+    }
+    
+    .stack-photo-text {
+        font-size: 38.4px;
+    }
+    
+    .psalm {
+        width: 769px;
+        margin-top: 50px;
+        margin-bottom: -100px;
+    }
+    
+    .about-container {
+        display: flex;
+    }
+    
+    .about-container div {
+        width: 800px;
+    }
+    
+    .about-container p {
+        font-family: var(--cormorant-font);
+        font-size: 16.1px;
+        line-height: 1.5;
+    }
+    
+    .about-container p:nth-child(1) {
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .about-section-sharon {
+        max-width: 550px;
+        font-size: 46px;
+        margin-bottom: 50px;
+        margin-top: -50px;
+    }
+
+    .about-section {
+        max-width: 700px;
+    }
+    
+    .about-container div  {
+        margin-bottom: 50px;
+    }
+    
+    .sharon-head-shot {
+        display: block;
+        margin: auto;
+        width: 519.2px;
+        margin-top: -30px;
+        margin-bottom: 150px;
+    }
+    
+    .about-family-photos {
+        margin-top: 25px;
+    }
+    
+    .stack-photo-back img {
+        width: 323px;
+    }
+    
+    .stack-photo-mid img {
+        width: 323px;
+    }
+    
+    .stack-photo-top img {
+        width: 323px;
+    }
+    
+    .stack-photo-text {
+        font-size: 26.87px;
+    }
+    
+    .psalm {
+        width: 538.3px;
+        margin-top: 0px;
+        margin-bottom: -100px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-container div {
+        width: 700px;
+    }
+    
+    .about-container p {
+        font-size: 16.1px;
+    }
+}
+
+@media (max-width: 725px) {
+    .about-section-sharon {
+        max-width: 550px;
+        font-size: 32.85px;
+        margin-bottom: 0px;
+        margin-top: -60px;
+    }
+
+    .about-section {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .about-container div  {
+        margin: auto;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    
+    .sharon-head-shot {
+        display: block;
+        margin: auto;
+        width: 370px;
+        margin-top: -30px;
+        margin-bottom: 150px;
+    }
+    
+    .about-family-photos {
+        margin-top: 25px;
+    }
+    
+    .stack-photo-back img {
+        width: 230.7px;
+    }
+    
+    .stack-photo-mid img {
+        width: 230.7px;
+    }
+    
+    .stack-photo-top img {
+        width: 230.7px;
+    }
+    
+    .stack-photo-text {
+        font-size: 19.17px;
+    }
+    
+    .psalm {
+        width: 384.45px;
+        margin-top: 0px;
+        margin-bottom: -100px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-container div {
+        width: 500px;
+    }
+    
+    .about-container p {
+        font-family: var(--cormorant-font);
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .about-container p:nth-child(1) {
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 525px) {
+    .about-section-sharon {
+        max-width: 550px;
+        font-size: 32.85px;
+        margin-top: -100px;
+    }
+
+    .about-section {
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .about-container div  {
+        margin: auto;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    
+    .sharon-head-shot {
+        width: 259px;
+        margin-top: -80px;
+        margin-bottom: 150px;
+    }
+    
+    .about-family-photos {
+        margin-top: 25px;
+    }
+    
+    .stack-photo-back img {
+        width: 161.5px;
+    }
+    
+    .stack-photo-mid img {
+        width: 161.5px;
+    }
+    
+    .stack-photo-top img {
+        width: 161.5px;
+    }
+    
+    .stack-photo-text {
+        font-size: 13.4px;
+    }
+    
+    .psalm {
+        width: 350px;
+        margin-top: 0px;
+        margin-bottom: -75px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-container div {
+        width: 350px;
+    }
+    
+    .about-container p {
+        font-family: var(--cormorant-font);
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .about-container p:nth-child(1) {
+        margin-top: -80px;
+    }
+}
 
 /* faq page  */
 
@@ -1862,6 +2205,10 @@ h3 b {
 }
 
 @media (max-width: 550px) {
+    .faq-container {
+       margin-top: -70px;
+    }
+
     .faq-title {
         font-size: 15px;
     }
