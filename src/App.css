@@ -902,6 +902,16 @@ label #cancel {
     }
 }
 
+.thank-you {
+    text-align: center;
+}
+
+.thank-you p {
+    font-size: 25px;
+    font-family: var(--cormorant-font);
+    color: var(--main-font-clr-gray)
+}
+
 /* references page  */
 .references-page h2 {
     text-align: center;
@@ -1284,6 +1294,10 @@ h3 b {
         font-size: 40px;
     }
 
+    .thank-you p {
+        font-size: 20px;
+    }
+
     .download-btn {
         font-size: 26.25px;
         bottom: 18.75px;
@@ -1346,6 +1360,10 @@ h3 b {
         font-size: 30px;
     }
 
+    .thank-you p {
+        font-size: 15px;
+    }
+
     .download-btn {
         font-size: 17.5px;
         bottom: 12.5px;
@@ -1403,6 +1421,7 @@ h3 b {
     h3 {
         font-size: 20px;
     }
+
 
     .download-btn {
         font-size: 8.75px;
@@ -1957,7 +1976,7 @@ h3 b {
     .sharon-head-shot {
         width: 259px;
         margin-top: -80px;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     
     .about-family-photos {
@@ -2377,3 +2396,4 @@ textarea {
         font-size: 15px;
     }
 }
+

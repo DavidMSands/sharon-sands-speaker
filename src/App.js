@@ -11,6 +11,7 @@ import PageNotFound from './404/PageNotFound';
 import ScrollToTop from './ScrollToTop';
 import NavBar from './Header/NavBar';
 import Footer from './Footer/Footer';
+import ThankYou from './Thank you/ThankYou';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/faq" element={<FAQMain />} />
           <Route exact path="/references" element={<ReferencesMain />} />
           <Route exact path="/contact" element={<ContactMain />} />
+          <Route exact path="/contact/confirmation" element={<ThankYou />} />
           <Route exact path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

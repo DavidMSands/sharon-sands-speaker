@@ -13,25 +13,45 @@ function ContactMain() {
         <meta property="og:url" content="https://sharonsandsspeaker.com/contact" />
     </Helmet>
       <h3>Contact <b>Sharon</b></h3>
-      <form action="https://formsubmit.co/b973eeca66ee004dff6b22ce68f2dd5c" method="POST" >
-        <label for="fname">First Name *</label><br/>
-        <input type="text" id="fname" name="firstname" className='form-input' required /><br/>
+      <form action="https://formsubmit.co/cc8c1499b6e41d039541d51631f63854" method="POST" >
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+          <label for="fname">First Name *</label><br/>
+          <input type="text" id="fname" name="firstname" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .25 }}>
         <label for="lname">Last Name *</label><br/>
         <input type="text" id="lname" name="lastname" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .5 }}>
         <label for="email">Email *</label><br/>
         <input type="email" id="email" name="email" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .75 }}>
         <label for="phone">Phone Number *</label><br/>
         <input type="tel" id="phone" name="phone" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1 }}>
         <label for="date">Date of Event *</label><br/>
         <input type="date" id="date" name="date" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.25 }}>
         <label for="venue">Venue Name *</label><br/>
         <input type="text" id="venue" name="venue" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.5 }}>
         <label for="audience">Audience Size *</label><br/>
         <input type="text" id="audience" name="audience" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.75 }}>
         <label for="church">Name of Host Church or Ministry *</label><br/>
         <input type="text" id="church" name="church" className='form-input' required /><br/>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 2 }}>
         <label for="details">Any Other Details You Would Like To Share?</label><br/>
         <textarea type="text" id="details" name="details" className='form-input' /><br/>
+        </motion.div>
+        <input type="hidden" name="_next" value="https://sharonsandsspeaker.com/contact/confirmation"></input>
+        <input type="hidden" name="_captcha" value="false"></input>
         <button type="submit">SUBMIT</button>
       </form>
       <div className='contact-img-container'>

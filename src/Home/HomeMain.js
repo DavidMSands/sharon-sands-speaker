@@ -58,7 +58,7 @@ function HomeMain() {
     </Helmet>
       <section className='home-about-section split-home'>
         <div>
-        <motion.div initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+        <motion.div initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
           <img src={mainAboutPhoto} />
         </motion.div >
         </div>
@@ -74,7 +74,7 @@ function HomeMain() {
       </section>
       
       <section className='home-reference-section'>
-      <motion.div initial={{ opacity: 0, x: -500}} whileInView={{ opacity: 1, x: 0}} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+      <motion.div initial={{ opacity: 0, x: -25}} whileInView={{ opacity: 1, x: 0}} transition={{ duration: 1.5 }} viewport={{ once: true }}>
         <div className='quote'>
           <blockquote>
             <p>Hearing from Sharon’s heart is like hearing the sound from a soul who has known life well—and lived it exceedingly well. Not only does Sharon know the scripture and how it relates to us today, she also knows pain and grief. She is well acquainted with both—and that makes her more related to everyone else. I love to hear her teach—compact, engaging, challenging,  vulnerable, always speaking upward, never ‘down to.’ And who doesn’t long for that? I am never disappointed. To hear her speak on the grace of God, the challenges of life, the reality of God’s provision in tough times—well, it invites me deeper into the heart of God. What a stellar woman of faith!”</p>

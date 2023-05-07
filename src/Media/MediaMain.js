@@ -47,19 +47,19 @@ function MediaMain() {
         <div className='headshot-split'>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot1} alt='sharon outdoor headshot' className='headshot-1' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshots1_websize.jpg')}/>
+              <img src={headshot1} alt='sharon outdoor headshot' className='headshot-1' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshot1_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot2} alt='sharon outdoor headshot red coat' className='headshot-2' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshots2_websize.jpg')}/>
+              <img src={headshot2} alt='sharon outdoor headshot red coat' className='headshot-2' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshot2_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: 500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
-              <img src={headshot3} alt='sharon headshot' className='headshot-3' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshots3_websize.jpg')}/>
+              <img src={headshot3} alt='sharon headshot' className='headshot-3' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshot3_websize.jpg')}/>
               <BsDownload  className='download-btn'/>
             </motion.div>
           </div>

@@ -51,7 +51,7 @@ function AboutMain() {
               </motion.div>
             </div>
             <div className='stack-photo-text'>
-              <motion.div initial={{ opacity: 0, x: -300 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}>
+              <motion.div initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} viewport={{ once: true }}>
                 <p>My family. . .</p>
               </motion.div>
             </div>
