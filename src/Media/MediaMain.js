@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Helmet } from "react-helmet";
 
 import downloadHeadshot1 from '../Data/Media/Sharon - headshots-15_websize.jpg'
-import downloadHeadshot2 from '../Data/Media/Sharon - headshots-9_websize.jpg'
+import downloadHeadshot2 from '../Data/Media/sharon-red-coat-headshot.jpg'
 import downloadHeadshot3 from '../Data/Media/sharon-sands-2023.jpg'
 import genHis from '../Data/Media/gen-his-logo-1.webp'
 import headshot1 from '../Data/Media/sharon-about-media.jpg'
