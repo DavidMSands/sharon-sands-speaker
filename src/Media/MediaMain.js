@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import downloadHeadshot1 from '../Data/Media/Sharon - headshots-15_websize.jpg'
 import downloadHeadshot2 from '../Data/Media/Sharon - headshots-9_websize.jpg'
 import downloadHeadshot3 from '../Data/Media/sharon-sands-2023.jpg'
+import genHis from '../Data/Media/gen-his-logo-1.webp'
 import headshot1 from '../Data/Media/sharon-about-media.jpg'
 import headshot2 from '../Data/Media/sharon-red-coat-headshot.jpg'
 import headshot3 from '../Data/Media/sharon-sands-church-pic.jpg'
@@ -121,7 +122,9 @@ function MediaMain() {
       <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
       <div className='gen-his'>
         <p>Want to hear more from Sharon?</p>
-        <p>Check out the <a href='https://genhisbettertogether.wordpress.com/list-of-posts/' target="_blank">"GEN HIS - BETTER TOGETHER"</a> blog!</p>
+        <p>Read <a href='https://www.strategicrenewal.com/grace-changes-us/' target="_blank">"The Grace That Changes Us"</a> featured on Strategic Renewal.</p>
+        <p>Also, check out the <a href='https://genhisbettertogether.wordpress.com/list-of-posts/' target="_blank">"GEN HIS - BETTER TOGETHER"</a> blog!</p>
+        <img src={genHis} alt='gen his logo' className='gen-his-logo'/>
       </div>
       </motion.div>
     </div>

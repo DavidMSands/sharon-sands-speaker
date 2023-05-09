@@ -18,7 +18,7 @@ export const allReferences = [
         title: "Women's Director"
     },
     {
-        quote: "Sharon is one of the realest, rawest deliverers of God’s Word that I have had the pleasure of sitting under many times over. When I first moved to Colorado, to plant a church with my husband, Passionate Hearts was the first women’s ministry that reached out to me. I attended a few of Sharon’s events and it was so refreshing to hear someone bring their life experiences, good and bad, into the studies and not be ashamed of how they got where they are, through the refining fire. It was nice to know I wasn’t the only one going through certain things. Ever since, Sharon has headlined several women’s events for my church. I look forward to hearing her teach for many years to come.\"",
+        quote: "Sharon is one of the most authentic deliverers of God’s Word that I have had the pleasure of sitting under many times over. When I first moved to Colorado, to plant a church with my husband, Passionate Hearts was the first women’s ministry that reached out to me. I attended a few of Sharon’s events and it was so refreshing to hear someone bring their life experiences, good and bad, into the studies and not be ashamed of how they got where they are, through the refining fire. It was nice to know I wasn’t the only one going through certain things. Ever since, Sharon has headlined several women’s events for my church. I look forward to hearing her teach for many years to come.\"",
         name: "April Korniotes",
         ministry: "Calvary Chapel Cherry Creek",
         title: "Women’s Ministry"

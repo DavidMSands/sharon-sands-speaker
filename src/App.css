@@ -1059,7 +1059,7 @@ h3 b {
 }
 
 .headshot-2 {
-    object-position: 0% 26%;
+    object-position: 0% 0%;
 }
 
 .headshot-3 {
@@ -1278,6 +1278,12 @@ h3 b {
     color: var(--accent-clr);
 }
 
+.gen-his-logo {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
 @media (max-width: 1325px) {
     .headshot-split img {
         width: 300px;
@@ -1345,7 +1351,7 @@ h3 b {
     }
     
     .gen-his p {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 
@@ -1466,7 +1472,7 @@ h3 b {
     }
     
     .gen-his p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -1534,7 +1540,7 @@ h3 b {
     }
     
     .gen-his p {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 /* footer styles */
@@ -1730,6 +1736,7 @@ h3 b {
     font-family: var(--cormorant-font);
     font-size: 21px;
     line-height: 1.5;
+    padding: 0 20px 0 20px;
 }
 
 .about-container p:nth-child(1) {
