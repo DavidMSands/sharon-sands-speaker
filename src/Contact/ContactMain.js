@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Helmet } from "react-helmet";
 
+import graphImage from '../Data/GraphImage.jpg'
+
 import corinthians from '../Data/Contact/cor-contact-verse.svg'
 
 function ContactMain() {
@@ -11,6 +13,8 @@ function ContactMain() {
     <Helmet>
         <meta property='og:title' content='Contact - Sharon Sands Speaker' />
         <meta property="og:url" content="https://sharonsandsspeaker.com/contact" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
     </Helmet>
       <h3>Contact <b>Sharon</b></h3>
       <form action="https://formsubmit.co/cc8c1499b6e41d039541d51631f63854" method="POST" >

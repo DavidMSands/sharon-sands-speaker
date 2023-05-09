@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { motion } from 'framer-motion'
 
 import { allReferences } from './AllReferencesData'
+import graphImage from '../Data/GraphImage.jpg'
 
 function ReferencesMain() {
   return (
@@ -12,6 +13,8 @@ function ReferencesMain() {
       <Helmet>
         <meta property='og:title' content='Media - Sharon Sands Speaker' />
         <meta property="og:url" content="https://sharonsandsspeaker.com/media" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
       </Helmet>
       <div>
         <h2>Sharon's <b>References:</b></h2>

@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet";
 
 import mainAboutPhoto from '../Data/Home/sharon-about-home.jpg'
-import mainAboutSectionPhoto from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
 import mountains from '../Data/Home/colorado-mountains-2.jpg'
 import speaking from '../Data/Home/sharon-speaking.jpg'
 import laughing from '../Data/Home/sharon-sands-mountain-backround-web.jpg'
 import danielVerse from '../Data/Home/daniel-verse-home.svg'
+import graphImage from '../Data/GraphImage.jpg'
 
 
 function HomeMain() {
@@ -55,6 +55,8 @@ function HomeMain() {
     <Helmet>
         <meta property='og:title' content='Sharon Sands Speaker' />
         <meta property="og:url" content="https://sharonsandsspeaker.com/" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
     </Helmet>
       <section className='home-about-section split-home'>
         <div>

@@ -7,6 +7,7 @@ import toddAndSharon from '../Data/About/todd_and_sharon.png'
 import tattoo from '../Data/About/tattoo.png'
 import sharonSands from '../Data/About/sharon-sands-headshot.png'
 import psalm from '../Data/About/psalm-verse-about.svg'
+import graphImage from '../Data/GraphImage.jpg'
 
 function AboutMain() {
   return (
@@ -15,6 +16,8 @@ function AboutMain() {
       <Helmet>
         <meta property='og:title' content='About - Sharon Sands Speaker' />
         <meta property="og:url" content="https://sharonsandsspeaker.com/about" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
       </Helmet>
       <div className='header-center'>
         <p className='about-section-sharon'>About <b>Sharon</b></p>

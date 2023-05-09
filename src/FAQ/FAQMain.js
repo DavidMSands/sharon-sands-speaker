@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { FAQs } from './FAQData';
 import { StatementOfFaith } from './StatementOfFaithData';
 import genesisScripture from '../Data/FAQ/genesis-scripture-faq.svg'
+import graphImage from '../Data/GraphImage.jpg'
 
 function FAQMain() {
   const [selected, setSelected] = useState(null);
@@ -20,8 +21,10 @@ function FAQMain() {
   return (
     <div className='faq-container'>
       <Helmet>
-          <meta property='og:title' content='FAQ - Sharon Sands Speaker' />
-          <meta property="og:url" content="https://sharonsandsspeaker.com/faq" />
+        <meta property='og:title' content='FAQ - Sharon Sands Speaker' />
+        <meta property="og:url" content="https://sharonsandsspeaker.com/faq" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
       </Helmet>
       <div id='faq-title-container'>
         <p>FAQs:</p>

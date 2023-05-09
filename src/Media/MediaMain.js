@@ -13,6 +13,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 // import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 import { BsDownload, BsCheckCircle } from 'react-icons/bs';
 import { MdContentCopy } from 'react-icons/md';
+import graphImage from '../Data/GraphImage.jpg'
 
 function MediaMain() {
   const [copySuccess, setCopySuccess] = useState(false);
@@ -42,6 +43,8 @@ function MediaMain() {
       <Helmet>
         <meta property='og:title' content='Media - Sharon Sands Speaker' />
         <meta property="og:url" content="https://sharonsandsspeaker.com/media" />
+        <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
+        <meta property="og:image" content={graphImage} />
       </Helmet>
       <div className='download-headshots-container'>
         <h3 className='headshot-title'>Sharons' <b>Headshots:</b></h3>
