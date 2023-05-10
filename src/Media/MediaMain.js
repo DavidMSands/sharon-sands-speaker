@@ -47,31 +47,31 @@ function MediaMain() {
         <meta property="og:image" content={graphImage} />
       </Helmet>
       <div className='download-headshots-container'>
-        <h3 className='headshot-title'>Sharons' <b>Headshots:</b></h3>
+        <h3 className='headshot-title'><b>Headshots:</b></h3>
         <div className='headshot-split'>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
               <img src={headshot1} alt='sharon outdoor headshot' className='headshot-1' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshot1_websize.jpg')}/>
-              <BsDownload  className='download-btn'/>
+              <BsDownload  className='download-btn' onClick={() => downloadImage(downloadHeadshot1, 'Sharon - headshot1_websize.jpg')}/>
             </motion.div>
           </div>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
               <img src={headshot2} alt='sharon outdoor headshot red coat' className='headshot-2' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshot2_websize.jpg')}/>
-              <BsDownload  className='download-btn'/>
+              <BsDownload  className='download-btn' onClick={() => downloadImage(downloadHeadshot2, 'Sharon - headshot2_websize.jpg')}/>
             </motion.div>
           </div>
           <div className='download-container'>
             <motion.div initial={{ opacity: 0, x: 500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }}>
               <img src={headshot3} alt='sharon headshot' className='headshot-3' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshot3_websize.jpg')}/>
-              <BsDownload  className='download-btn'/>
+              <BsDownload  className='download-btn' onClick={() => downloadImage(downloadHeadshot3, 'Sharon - headshot3_websize.jpg')}/>
             </motion.div>
           </div>
         </div>
       </div>
       <div className='sharon-bio'>
       <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
-      <h3>Sharon's <b>Bio:</b></h3>
+      <h3><b>Bio:</b></h3>
         <div className='bio-box'>
           <div>
             <p>Sharon will tell you that the older she gets, the more she appreciates the huge, overflowing grace of God. Through many precious seasons of life, as well as some incredibly dark valleys, she has seen the Lord be forever gracious and faithful!</p>

@@ -16,6 +16,9 @@ function ContactMain() {
         <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
         <meta property="og:image" content={graphImage} />
     </Helmet>
+      <div className='contact-img-container'>
+        <img src={corinthians} alt='1 corinthians 2:2 graphic' />
+      </div>
       <h3>Contact <b>Sharon</b></h3>
       <form action="https://formsubmit.co/cc8c1499b6e41d039541d51631f63854" method="POST" >
         <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
@@ -58,9 +61,6 @@ function ContactMain() {
         <input type="hidden" name="_captcha" value="false"></input>
         <button type="submit">SUBMIT</button>
       </form>
-      <div className='contact-img-container'>
-        <img src={corinthians} alt='1 corinthians 2:2 graphic' />
-      </div>
     </div>
     </motion.div>
   )

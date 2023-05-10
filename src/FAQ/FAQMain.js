@@ -26,6 +26,9 @@ function FAQMain() {
         <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
         <meta property="og:image" content={graphImage} />
       </Helmet>
+      <div className='genesis-picture-container'>
+        <img src={genesisScripture} alt="genesis 16:13 picture" />
+      </div>
       <div id='faq-title-container'>
         <p>FAQs:</p>
       </div>
@@ -68,9 +71,6 @@ function FAQMain() {
             </div>
             </motion.div>
           ))} 
-      </div>
-      <div className='genesis-picture-container'>
-        <img src={genesisScripture} alt="genesis 16:13 picture" />
       </div>
     </div>
   )

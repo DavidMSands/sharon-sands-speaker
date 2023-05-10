@@ -913,6 +913,7 @@ label #cancel {
 }
 
 /* references page  */
+
 .references-page h2 {
     text-align: center;
     font-size: 50px;
@@ -2038,9 +2039,9 @@ h3 b {
 }
 
 .genesis-picture-container img {
-    margin-top: 50px;
-    margin-bottom: -150px;
-    width: 1000px;
+    margin-top: -70px;
+    margin-bottom: -10px;
+    width: 900px;
 }
 
 .faq-container {
@@ -2178,9 +2179,9 @@ h3 b {
 @media only screen and (max-width: 1350px) {
     .genesis-picture-container img {
         width: 100%;
-        max-width: 1000px;
-        margin-top: 25px;
-        margin-bottom: -75px;
+        max-width: 900px;
+        margin-top: -67px;
+        margin-bottom: -10px;
     }
     
     .faq-container {
@@ -2273,8 +2274,9 @@ h3 b {
 }
 
 .contact-container img {
-    width: 1000px;
-    margin-bottom: -125px;
+    width: 900px;
+    margin-top: -125px;
+    margin-bottom: -50px;
 }
 
 label {
@@ -2330,7 +2332,7 @@ textarea {
 @media (max-width: 1000px ) {
     .contact-container img {
         width: 100%;
-        margin-bottom: -75px;
+        /* margin-bottom: -75px; */
     }
 }
 @media (max-width: 727px) {
@@ -2343,7 +2345,8 @@ textarea {
 
     .contact-container img {
         width: 100%;
-        margin-bottom: -75px;
+        margin-top: -225px;
+        margin-bottom: -50px;
     }
 
     form { max-width:70%; margin: auto; }
@@ -2376,7 +2379,8 @@ textarea {
     }
 
     .contact-container img {
-        margin-top: 20px;
+        margin-top: -80px;
+        margin-bottom: -15px;
     }
 }
 
