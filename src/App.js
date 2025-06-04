@@ -7,6 +7,7 @@ import MediaMain from './Media/MediaMain';
 import ReferencesMain from './References/ReferencesMain';
 import ContactMain from './Contact/ContactMain';
 import AboutMain from './About/AboutMain';
+import WorkshopMain from './Workshop/WorkshopMain';
 import PageNotFound from './404/PageNotFound';
 import ScrollToTop from './ScrollToTop';
 import NavBar from './Header/NavBar';
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/media" element={<MediaMain />} />
           <Route exact path="/faq" element={<FAQMain />} />
           <Route exact path="/references" element={<ReferencesMain />} />
+          <Route exact path="/workshop" element={<WorkshopMain />} />
           <Route exact path="/contact" element={<ContactMain />} />
           <Route exact path="/contact/confirmation" element={<ThankYou />} />
           <Route exact path="*" element={<PageNotFound />} />

@@ -218,12 +218,43 @@ label #cancel {
 }
 /* home page styles */
 
+.workshop-banner {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.8rem clamp(1rem, 4vw, 3rem);
+    margin-block: 3rem;
+    text-align: center;
+    margin: -100px 0 100px 0;
+  }
+  
+  .headline {
+    font-family: var(--main-font);
+    font-size: clamp(1.1rem, 1.6vw + 0.6rem, 1.75rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--main-font-clr-gray);
+    line-height: 1.4;
+  }
+  
+  .click-link {
+    font-family: var(--main-font);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--accent-clr);
+    transition: color 0.25s ease, background 0.25s ease;
+    padding: 0.1rem 0.3rem;          /* small hit‑area without breaking line */
+    border-radius: 0.25rem;
+  }
+  
+  .click-link:hover,
+  .click-link:focus-visible {
+
+  }
+
 .home-about-section {
     max-width: 1200px;
     margin: auto;
 }
-
-
 
 .home-about-section img {
     width: 400px;
@@ -2031,6 +2062,78 @@ h3 b {
         margin-top: -80px;
     }
 }
+
+.workshop-header {
+    max-width: 550px;
+    font-family: var(--cormorant-font);
+    font-size: 60px;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--main-font-clr-gray);
+    position: relative;
+    text-align: center;
+    margin-bottom: -25px;
+    margin-top: -50px;
+    font-weight: 400;
+}
+.workshop {
+    max-width: 1000px;
+    margin: auto auto -175px auto;
+    padding: 2rem clamp(1rem, 4vw, 3rem);
+    border-radius: 0.75rem;
+    font-family: var(--main-font);
+    color: var(--main-font-clr-gray);
+    line-height: 1.6;
+    font-family: var(--cormorant-font);
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .workshop__intro p,
+  .workshop__response p,
+  .workshop__sessions p {
+    margin-block: 1rem;
+  }
+  
+  .workshop__feelings {
+    list-style: "— ";
+    padding-left: 1.25rem;
+    margin-block: 1rem 2rem;
+  }
+  
+  .workshop__exclaim {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--accent-clr);
+  }
+  
+  .workshop__title {
+    margin: 4.5rem 0 1.5rem;
+    font-size: 3rem;
+    font-family: var(--cormorant-font);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-clr);
+  }
+  
+  .workshop__sessions section {
+    margin-bottom: 4rem;
+  }
+  
+  .workshop__sessions h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.125rem;
+    font-family: var(--cormorant-font);
+    color: var(--accent-clr);
+  }
+  
+  @media (min-width: 768px) {
+    .workshop {
+      padding: 3rem 4rem;
+    }
+  }
+  
 
 /* faq page  */
 

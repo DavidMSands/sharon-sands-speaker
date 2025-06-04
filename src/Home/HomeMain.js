@@ -58,6 +58,15 @@ function HomeMain() {
         <meta property="og:description" content="Sharon is the Women's Discipleship Director at Crossroads Community Church in Parker, CO and for 18 years was the Founder and Executive Director of Passionate Heart Ministries. She has a passion to equip, nurture and encourage all women in their pursuit of Christ!" />
         <meta property="og:image" content={graphImage} />
     </Helmet>
+     
+    <section class="workshop-banner" role="banner">
+    <p class="headline">
+      <a href="/workshop" class="click-link">
+        CLICK HERE
+      </a>
+      TO LEARN ABOUT Sharon’s “MOMS OF PRODIGALS WORKSHOP”
+    </p>
+  </section>
       <section className='home-about-section split-home'>
         <div>
         <motion.div initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
@@ -74,6 +83,7 @@ function HomeMain() {
           </div>
         </div>
       </section>
+
       
       <section className='home-reference-section'>
       <motion.div initial={{ opacity: 0, x: -25}} whileInView={{ opacity: 1, x: 0}} transition={{ duration: 1.5 }} viewport={{ once: true }}>
