@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Helmet } from "react-helmet";
 
+import momsOfProdigals from '../Data/Workshop/moms-of-prodigals.png'
 import graphImage from '../Data/GraphImage.jpg'
 
 function WorkshopMain() {
@@ -15,7 +16,9 @@ function WorkshopMain() {
                 <meta property="og:image" content={graphImage} />
               </Helmet>
               <div className='header-center'>
-                <p className='workshop-header'>Moms of Prodigals Workshop</p>
+                <motion.div initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+                    <img src={momsOfProdigals} alt="Moms of Prodigals Workshop" className='workshop-header-image' />
+                </motion.div>
               </div>
 
               <section className="workshop" role="region" aria-labelledby="workshop-heading">
@@ -39,7 +42,6 @@ function WorkshopMain() {
                         <p className="workshop__exclaim">It can take the breath right out of you!</p>
                     </div>
 
-                    {/* Burden + Response */}
                     <article className="workshop__response">
                         <p>
                         As a mom who has walked this journey more than once, I have such a burden
@@ -54,7 +56,6 @@ function WorkshopMain() {
                         </p>
                     </article>
 
-                    {/* Sessions */}
                     <h2 id="workshop-heading" className="workshop__title">
                         Moms&nbsp;of&nbsp;Prodigals&nbsp;Workshop&nbsp;· 2&nbsp;Hours
                     </h2>
@@ -91,6 +92,17 @@ function WorkshopMain() {
                         </p>
                         </section>
                     </div>
+      
+                    <aside className="workshop__note" aria-label="Workshop note">
+                        <p>
+                            <strong>Note:</strong> The workshop can be shortened or lengthened to
+                            fit each group’s particular need.
+                        </p>
+                        <p>
+                            It can also be offered to <em>Parents of Prodigals</em>&nbsp;— including
+                            dads&nbsp;— if desired.
+                        </p>
+                    </aside>
                 </section>
               
             </div>
